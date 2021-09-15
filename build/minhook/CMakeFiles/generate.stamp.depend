@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/Quinn/Desktop/TreroInternal/minhook/CMakeLists.txt
+C:/Users/Quinn/Desktop/TreroInternal/minhook/cmake/minhook-config.cmake.in

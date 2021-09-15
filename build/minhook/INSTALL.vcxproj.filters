@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Quinn\Desktop\TreroInternal\build\CMakeFiles\28627fb2139b45aed992b0eb4f3945e5\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6F563916-3953-342D-B975-6EBAEEA5B11B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

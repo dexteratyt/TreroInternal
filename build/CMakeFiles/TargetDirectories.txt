@@ -1,0 +1,9 @@
+C:/Users/Quinn/Desktop/TreroInternal/build/CMakeFiles/INSTALL.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/CMakeFiles/TreroInternal.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/CMakeFiles/PACKAGE.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/minhook/CMakeFiles/INSTALL.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/minhook/CMakeFiles/minhook.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/minhook/CMakeFiles/PACKAGE.dir
+C:/Users/Quinn/Desktop/TreroInternal/build/minhook/CMakeFiles/ALL_BUILD.dir
