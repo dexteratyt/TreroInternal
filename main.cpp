@@ -7,6 +7,8 @@
 #include <cmath>
 #include <map>
 
+// "Here we have a wild yammi in her natural habitat" - Flame
+
 #define PI 3.14159265359 // 3.14159265359
 
 typedef void(__thiscall* tick)(ClientInstance*, void* a2);

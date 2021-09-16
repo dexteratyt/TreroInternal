@@ -1,6 +1,7 @@
 #pragma once
 #include <Windows.h>
 #include "../../Math/Math.h"
+#include "Level.h"
 #include <bitset>
 #include <vector>
 #include <functional>
@@ -61,7 +62,7 @@ public:
     void teleport(float x, float y, float z) {
         teleport(Vector3(x,y,z));
     };
-private:
+/*private:
 	virtual void Function0();
 	virtual void Function1();
 	virtual void Function2();
@@ -171,7 +172,7 @@ public:
 	virtual void onInsideBubbleColumn(bool);
 	virtual bool isImmobile(void);
 	virtual bool isSilent(void);
-	virtual bool isPickable(void); /* Item Actor */
+	virtual bool isPickable(void);
 private:
 	virtual void Function90();
 public:
@@ -269,7 +270,7 @@ public:
 	virtual void save(__int64 CompoundTag);
 	virtual void saveWithoutId(__int64 CompoundTag);
 	virtual void load(__int64 CompoundTag, __int64 DataLoadHelper);
-	virtual void loadLinks(/*__int64 CompoundTag, std::vector<__int64 ActorLink, std::allocator<__int64 ActorLink>>, DataLoadHelper*/);
+	virtual void loadLinks();
 	virtual __int64 getEntityTypeId(void);
 	virtual __int64 getRawName(void);
 	virtual __int64 getSourceUniqueID(void);
@@ -384,8 +385,8 @@ private:
 public:
 	virtual bool outOfWorld(void);
 	virtual void _hurt(__int64 ActorDamageSource, int, bool, bool);
-	virtual void markHurt(void); /* Map */
-	virtual __int64 _getAnimationComponent(__int64 /*std::shared_ptr<class AnimationComponent>*/, __int64 AnimationComponentGroup);
+	virtual void markHurt(void);
+	virtual __int64 _getAnimationComponent(__int64 , __int64 AnimationComponentGroup);
 	virtual void readAdditionalSaveData(__int64 CompoundTag, __int64 DataLoadHelper);
 	virtual void addAdditionalSaveData(__int64 CompoundTag);
 private:
@@ -402,5 +403,5 @@ public:
 	virtual void _removeRider(__int64 ActorUniqueID, bool, bool, bool);
 	virtual void _onSizeUpdated(void);
 private:
-	virtual void Function367();
+	virtual void Function367();*/
 };

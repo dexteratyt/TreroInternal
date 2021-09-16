@@ -1,4 +1,6 @@
-#pragma once
+#ifndef CLIENT_MEM_MEM
+#define CLIENT_MEM_MEM
+
 #include <Windows.h>
 #include <Psapi.h>
 #include <vector>
@@ -7,8 +9,10 @@
 #define GET_BYTE( x )    (GET_BITS(x[0]) << 4 | GET_BITS(x[1]))
 #define GET_BITS( x )    (INRANGE((x&(~0x20)),'A','F') ? ((x&(~0x20)) - 'A' + 0xa) : (INRANGE(x,'0','9') ? x - '0' : 0))
 
-class Utils {
+class Mem {
 public:
-	static uintptr_t findSig(const char*);
-    static uintptr_t findMultiLvlPtr(uintptr_t, std::vector<unsigned int>);
+    static auto findSig(const char*) -> uintptr_t;
+    static auto findMultiLvlPtr(uintptr_t, std::vector<unsigned int>) -> uintptr_t;
 };
+
+#endif /* CLIENT_MEM_MEM */

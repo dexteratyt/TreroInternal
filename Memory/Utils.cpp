@@ -1,10 +1,6 @@
 #include "Utils.h"
-#include <Windows.h>
-#include <vector>
-#include <string>
-#include <map>
 
-uintptr_t Utils::findSig(const char* sig){
+uintptr_t Mem::findSig(const char* sig){
     const char* pattern = sig;
 	uintptr_t firstMatch = 0;
 	static const uintptr_t rangeStart = (uintptr_t)GetModuleHandleA("Minecraft.Windows.exe");
@@ -51,7 +47,7 @@ uintptr_t Utils::findSig(const char* sig){
     };
 };
 
-uintptr_t Utils::findMultiLvlPtr(uintptr_t baseAddr, std::vector<unsigned int> offsets){
+uintptr_t Mem::findMultiLvlPtr(uintptr_t baseAddr, std::vector<unsigned int> offsets){
     uintptr_t addr = baseAddr;
     
     for (int I = 0; I < offsets.size(); I++){
