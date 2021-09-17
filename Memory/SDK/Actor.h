@@ -62,7 +62,7 @@ public:
     void teleport(float x, float y, float z) {
         teleport(Vector3(x,y,z));
     };
-/*private:
+private:
 	virtual void Function0();
 	virtual void Function1();
 	virtual void Function2();
@@ -403,5 +403,5 @@ public:
 	virtual void _removeRider(__int64 ActorUniqueID, bool, bool, bool);
 	virtual void _onSizeUpdated(void);
 private:
-	virtual void Function367();*/
+	virtual void Function367();
 };

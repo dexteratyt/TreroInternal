@@ -18,10 +18,12 @@ typedef void(__thiscall* key)(uint64_t, bool);
 key _key;
 
 std::map<uint64_t, bool> keymap = std::map<uint64_t, bool>();
+std::map<uint64_t, bool> dKeymap = std::map<uint64_t, bool>();
 
 void keyCallback(uint64_t c, bool v){
     keymap[c] = v;
-    _key(c, v);
+    //if (!dKeymap[c])
+        _key(c, v);
 };
 
 bool vModule = true;
@@ -38,9 +40,12 @@ void callback(ClientInstance* instance, void* a2){
             player->setFieldOfView(1);
         }
 
+        if (keymap[(int)'Y']){
+            player->addLevels(100);
+        }
+
         /*if (keymap[VK_CONTROL] && keymap[0x4C]) { // eject
             MH_DisableHook(MH_ALL_HOOKS);
-	        Sleep(1000);
 	        MH_Uninitialize();
         }*/
     }
@@ -49,7 +54,7 @@ void callback(ClientInstance* instance, void* a2){
 };
 
 void init(HMODULE c){
-    if(MH_Initialize() == MH_OK){
+    if(MH_Initialize() == MH_OK){ // *reinterpret_cast<int*>(Mem::findSig("48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 40 55") + 3)
         uintptr_t baseAddr = (uintptr_t)GetModuleHandleA("Minecraft.Windows.exe");
         uintptr_t hookAddr = (uintptr_t)(baseAddr + 0x778C35);
         uintptr_t keymapAddr = (uintptr_t)(baseAddr + 0x72C620);

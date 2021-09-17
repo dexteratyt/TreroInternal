@@ -11,7 +11,7 @@ public:
 		TextHolder t(message);
 		this->displayTextObjectMessage(&t);
 	}*/
-/*public:
+public:
 	virtual void knockback(Actor*, int, float, float, float, float, float);
 	virtual void resolveDeathLoot(int, __int64 ActorDamageSource);
 private:
@@ -243,5 +243,5 @@ public:
 	virtual __int64 getInputMode(void);
 	virtual int getPlayMode(void);
 	virtual void reportMovementTelemetry(__int64 MovementEventType);
-	virtual void onMovePlayerPacketNormal(Vector3*, Vector2*, float);*/
+	virtual void onMovePlayerPacketNormal(Vector3*, Vector2*, float);
 };

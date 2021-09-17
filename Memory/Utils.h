@@ -11,8 +11,8 @@
 
 class Mem {
 public:
-    static auto findSig(const char*) -> uintptr_t;
-    static auto findMultiLvlPtr(uintptr_t, std::vector<unsigned int>) -> uintptr_t;
+    static uintptr_t findSig(const char*);
+    static uintptr_t findMultiLvlPtr(uintptr_t, std::vector<unsigned int>);
 };
 
 #endif /* CLIENT_MEM_MEM */
