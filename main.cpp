@@ -41,7 +41,9 @@ void callback(ClientInstance* instance, void* a2){
         }
 
         if (keymap[(int)'Y']){
-            player->addLevels(100);
+            //player->swing();
+            //player->handleFallDistanceOnServer(0,0,false);
+            //player->attack(player->getLevel()->getEntities()[0]);
         }
 
         /*if (keymap[VK_CONTROL] && keymap[0x4C]) { // eject
@@ -58,6 +60,7 @@ void init(HMODULE c){
         uintptr_t baseAddr = (uintptr_t)GetModuleHandleA("Minecraft.Windows.exe");
         uintptr_t hookAddr = (uintptr_t)(baseAddr + 0x778C35);
         uintptr_t keymapAddr = (uintptr_t)(baseAddr + 0x72C620);
+        uintptr_t packetAddr = (uintptr_t)(baseAddr + 0x0);
 
         if(MH_CreateHook((void*)hookAddr, &callback, reinterpret_cast<LPVOID*>(&_tick)) == MH_OK){
             MH_EnableHook((void*)hookAddr);
